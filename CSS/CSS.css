@@ -1,0 +1,23 @@
+
+body{
+    background-color: #F2F2F2;
+    background-image: url("imagini/fakurian-design-5KJKcu6vkE0-unsplash-scaled.jpeg");
+}
+
+.text1{
+    text-align: center;
+    font-size: 24px;
+    font-family: "serif";
+}
+.imagine {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+    border-radius: 50px;
+}
+
+.titlu{
+    text-align: center;
+    font-size: 45px;
+}
