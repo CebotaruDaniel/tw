@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
 *{
  margin: 0;
     padding: 0;
     color: black;
+    box-sizing: border-box;
 
 }
 
 body{
-    background-image: url("imagini/becdd8955dc57eb.png");
+    background-image: url("imagini/background.png");
     font-family: 'Anton', sans-serif;
     position: relative;
     padding-bottom: 100px;
@@ -23,52 +25,56 @@ body{
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.imagine {
-    float: left;
-    margin-right: 10px;
-    width: 30%;
-    border-radius: 50px;
-    animation: anim-ss steps(23) 4s infinite;
+
+.text-intro{
+    align-items: center;
+    margin-left: 250px;
+    font-size: 20px;
+
 }
 
-.titlu ,h2{
+.titlu {
     margin-top: 50px;
     text-align: center;
     font-size: 45px;
     font-family: 'Anton', sans-serif;
-    text-decoration: underline;
     margin-bottom: 35px;
-
-}
-
-
-.nft1{
-    height: 300px;
-    width: 33%;
-    float: left;
-    margin-right: 10px;
-    border-radius: 50px;
-}
-
-.titlusection a,h3,h4,h5{
-    color: wheat;
-    font-family: 'Luckiest Guy', cursive;
-    margin-bottom: 30px;
-    text-decoration: none;
-    font-size: 45px;
-    text-align: center;
-
-}
-
-.titlusection a{
-    background-color: black;
-    border-radius: 10px;
-    padding: 10px;
+    margin-left: 250px;
+    text-transform: uppercase;
+    border-color: black;
     border-style: solid;
-    color: cornflowerblue;
-    font-family: 'Luckiest Guy', cursive;
+    border-radius: 50px;
+    background-color: #7900FF;
+    -webkit-text-stroke: 1px white;
+    opacity: 80%;
 
 }
+
+.titlu-principal{
+    margin-top: 50px;
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    border-style: solid;
+    border-radius: 50px;
+    display: block;
+    background-color: #7900FF;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.4px white;
+    opacity: 80%;
+
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0;
+
+}
+
 
 .text2{
     text-align: center;
@@ -77,58 +83,71 @@ body{
     margin-top: 30px;
 }
 
+/* Navbar*/
+
 .navbar{
     font-family: 'Luckiest Guy', cursive;
-    background-color: #90E0EF;
+    background-color: #7900FF;
     margin-bottom: 10px;
     border-color: black;
     padding: 1%;
     border-style: solid;
-
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: 95%;
 }
 
-  .navbar a
-  {
-      background-image: url("imagini/becdd8955dc57eb.png");
+  .navbar a {
+      background-color: white;
       border-radius: 200px;
       padding: 10px;
-      border-style: solid;
-      text-decoration: none;
-      margin-right: 25px ;
+      border-style: solid;;
+      margin-right: 25px;
       color: black;
+      max-width: 150px;
+      margin-left: 25px;
+      text-decoration: none;
+      font-size: 20px;
+      opacity: 90%;
+
 
   }
 
 .navbar a:hover
 {
-    color: cornflowerblue;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: 1s
 }
 
 
 .logo
 {
-    float: left;
-    position: center;
     text-align: center;
-    width: 20%;
-    margin-right: 250px;
-    background-image: url("imagini/becdd8955dc57eb.png");
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
     border-radius: 50px;
     border-style: solid;
-    padding: 10px;
+    padding: 10px 10px;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: white;
+    margin-right: 100px;
+    margin-left: 100px;
 
 }
 
 article p
 {
     background-color: #90E0EF;
-    border-radius: 60px;
+    border-radius: 20px;
     padding: 10px;
     border-style: solid;
 }
 
-footer
-{
+.footer {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -141,16 +160,57 @@ footer
     border-style: solid;
 }
 
-.text1{
-    background-color: #90E0EF;
-    border-radius: 200px;
-    padding: 10px;
-    border-style: solid;
 
+.imagine-titlu{
+    display: block;
+    margin-right: auto;
+    width: 50%;
+    border-style: solid;
+    border-radius: 50px;
+    margin-left: 370px;
+    margin-bottom: 20px;
 
 }
 
+.imagine-intrebuintari{
 
+    display: flex;
+    width: 70%;
+    border-style: solid;
+    border-radius: 50px;
+    margin-left: 280px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.titlu-tipuri{
+    margin-top: 50px;
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    border-style: solid;
+    border-radius: 50px;
+    display: block;
+    background-color: white;
+    justify-content: left;
+    text-transform: uppercase;
+    opacity: 70%;
+}
+
+.text-inceput{
+    text-align: center;
+    font-size: 72px;
+    color: cornflowerblue;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
 
 
 
