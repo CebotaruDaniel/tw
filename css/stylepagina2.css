@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -30,55 +31,58 @@ body{
     border-radius: 50px;
 }
 
-.titlu ,h2{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 45px;
-    font-family: 'Anton', sans-serif;
-    text-decoration: underline;
-    margin-bottom: 35px;
-
-}
-
-
 .nft1{
-    height: 300px;
+    height: 330px;
     width: 33%;
     float: left;
     margin-right: 10px;
     border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    margin-top: 70px;
 }
 
-.titlusection a,h3,h4,h5{
-    color: wheat;
+.titlusection a,h4,h5{
+    color: black;
     font-family: 'Luckiest Guy', cursive;
-    margin-bottom: 30px;
     text-decoration: none;
     font-size: 45px;
-    text-align: center;
+    text-align: left;
+    opacity: 80%;
+    padding: 23px;
 
 }
 
 .titlusection a{
-    background-color: black;
-    border-radius: 10px;
-    padding: 10px;
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
     border-style: solid;
-    color: cornflowerblue;
-    font-family: 'Luckiest Guy', cursive;
+    border-radius: 50px;
+    background-color: white;
+    text-transform: uppercase;
+    opacity: 70%;
+    border-width: 4px;
+    padding: 5px 5px;
+    margin: 0;
+
+
+
 
 }
 
-.text2{
-    text-align: center;
+.text-despre{
     font-size: 20px;
     font-family: "serif";
     margin-top: 30px;
+    border-width: 4px;
+    display: block;
+    justify-content: left;
+
 }
 
 .navbar{
     font-family: 'Luckiest Guy', cursive;
-    background-color: #90E0EF;
+    background-color: #7900FF;
     margin-bottom: 10px;
     border-color: black;
     padding: 1%;
@@ -86,26 +90,34 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
+    opacity: 95%;
 
 }
 
 .navbar a
 {
-    background-image: url("imagini/background.png");
+    background-color: white;
     border-radius: 200px;
     padding: 10px;
     border-style: solid;;
-    margin-right: 25px ;
-    color: white;
+    margin-right: 25px;
+    color: black;
     max-width: 150px;
-    margin-left: 25px ;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 90%;
+
 
 
 }
 
 .navbar a:hover
 {
-    color: cornflowerblue;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: 1s
 }
 
 
@@ -113,11 +125,16 @@ body{
 {
     text-align: center;
     width: 100%;
-    max-width: 200px;
-    background-image: url("imagini/background.png");
+    max-width: 300px;
+    background-color: white;
     border-radius: 50px;
     border-style: solid;
-    padding: 5px 10px;
+    padding: 10px 10px;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: white;
+    margin-right: 100px;
+    margin-left: 100px;
+
 }
 
 article p
@@ -130,17 +147,23 @@ article p
 
 footer
 {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #90E0EF;
     color: black;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Luckiest Guy', cursive;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+    padding-top: 5px;
     border-style: solid;
+    text-transform: uppercase;
+    text-decoration: none;
+
 }
+
+
 
 .text1{
     background-color: #90E0EF;
@@ -148,4 +171,68 @@ footer
     padding: 10px;
     border-style: solid;
 }
+
+.titlu-intro{
+    margin-top: 50px;
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    border-style: solid;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    background-color: #7900FF;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.4px white;
+    opacity: 80%;
+    margin-bottom: 30px;
+    border-width: 4px;
+
+}
+
+#nft2{
+    height: 330px;
+    width: 33%;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+
+}
+
+.nft3{
+    height: 350px;
+    width: 33%;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    float:left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+
+
+
+}
+
+.pret{
+
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+    color: greenyellow;
+    padding-top: 10px;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: black;
+
+}
+
+.active{
+    border-color: greenyellow;
+    border-width: 5px;
+
+}
+
+
 

@@ -204,11 +204,17 @@ article p
 .text-inceput{
     text-align: center;
     font-size: 72px;
-    color: cornflowerblue;
+    color: mediumslateblue;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: black;
     margin-top: 30px;
     margin-bottom: 50px;
+
+}
+
+.active{
+    border-color: greenyellow;
+    border-width: 5px;
 
 }
 
