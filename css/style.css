@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
 *{
  margin: 0;
     padding: 0;
@@ -98,7 +102,7 @@ body{
     opacity: 95%;
 }
 
-  .navbar a {
+.navbar a {
       background-color: white;
       border-radius: 200px;
       padding: 10px;
@@ -136,7 +140,6 @@ body{
     -webkit-text-stroke-color: white;
     margin-right: 100px;
     margin-left: 100px;
-
 }
 
 article p
@@ -152,7 +155,7 @@ article p
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #90E0EF;
+    background-color: #7900FF;
     color: black;
      font-family: "Times New Roman", Times, serif;
     text-align: center;
@@ -215,7 +218,6 @@ article p
 .active{
     border-color: greenyellow;
     border-width: 5px;
-
 }
 
 
