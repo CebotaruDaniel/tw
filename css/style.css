@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
 
 *{
- margin: 0;
+    margin: 0;
     padding: 0;
     color: black;
     box-sizing: border-box;
-
 }
 
 body{
-    background-image: url("imagini/background.png");
+    background-color: #E5E3C9;
     font-family: 'Anton', sans-serif;
     position: relative;
     padding-bottom: 100px;
@@ -34,22 +35,22 @@ body{
     align-items: center;
     margin-left: 250px;
     font-size: 20px;
-
 }
 
 .titlu {
     margin-top: 50px;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
+    color: #f2f2f2;
     font-family: 'Anton', sans-serif;
     margin-bottom: 35px;
     margin-left: 250px;
     text-transform: uppercase;
     border-color: black;
     border-style: solid;
-    border-radius: 50px;
-    background-color: #7900FF;
-    -webkit-text-stroke: 1px white;
+    border-radius: 10px;
+    background-color: rgba(112, 227, 147, 0.81);
+    -webkit-text-stroke: 1px black;
     opacity: 80%;
 
 }
@@ -61,21 +62,21 @@ body{
     margin-bottom: 10px;
     margin-left: 250px;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: 10px;
+    color: #f2f2f2;
+    border-color: black;
     display: block;
-    background-color: #7900FF;
+    background-color: rgba(112, 227, 147, 0.81);
     text-transform: uppercase;
-    -webkit-text-stroke: 0.4px white;
+    -webkit-text-stroke: 1px black;
     opacity: 80%;
-
-
 }
 
 .container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     text-align: center;
-    margin: 0;
+    margin: 0 -75px;
 
 }
 
@@ -89,9 +90,37 @@ body{
 
 /* Navbar*/
 
+.logo
+{
+    text-align: center;
+    width: 100%;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: white;
+    font-size: 50px;
+    font-family: 'Bungee Shade', cursive;
+    color: #979a8d;
+}
+
+.navbar a {
+    background-color: rgba(169, 229, 234, 0.55);
+    border-radius: 10px;
+    padding: 8px;
+    border-style: solid;;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: #362706;
+    border-color: black;
+    border-width: 1px;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: rgba(255, 251, 251, 0.93);
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 100%;
+}
+
 .navbar{
-    font-family: 'Luckiest Guy', cursive;
-    background-color: #7900FF;
+    font-family: 'Anton', sans-serif;
+    background-color: #94B49F;
     margin-bottom: 10px;
     border-color: black;
     padding: 1%;
@@ -99,24 +128,9 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    opacity: 95%;
+    opacity: 90%;
 }
 
-.navbar a {
-      background-color: white;
-      border-radius: 200px;
-      padding: 10px;
-      border-style: solid;;
-      margin-right: 25px;
-      color: black;
-      max-width: 150px;
-      margin-left: 25px;
-      text-decoration: none;
-      font-size: 20px;
-      opacity: 90%;
-
-
-  }
 
 .navbar a:hover
 {
@@ -127,27 +141,14 @@ body{
 }
 
 
-.logo
-{
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-    background-color: white;
-    border-radius: 50px;
-    border-style: solid;
-    padding: 10px 10px;
-    -webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: white;
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
 article p
 {
-    background-color: #90E0EF;
+    background-color: rgba(218, 231, 218, 0.95);
     border-radius: 20px;
     padding: 10px;
     border-style: solid;
+    border-color: #B4CFB0;
+    border-width: 10px;
 }
 
 .footer {
@@ -155,7 +156,7 @@ article p
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #7900FF;
+    background-color: rgba(0, 0, 0, 0.2);
     color: black;
      font-family: "Times New Roman", Times, serif;
     text-align: center;
@@ -170,7 +171,7 @@ article p
     width: 50%;
     border-style: solid;
     border-radius: 50px;
-    margin-left: 370px;
+    margin-left: 410px;
     margin-bottom: 20px;
 
 }
@@ -181,7 +182,7 @@ article p
     width: 70%;
     border-style: solid;
     border-radius: 50px;
-    margin-left: 280px;
+    margin-left: 305px;
     margin-bottom: 20px;
     margin-top: 30px;
     align-items: center;
@@ -198,27 +199,21 @@ article p
     border-style: solid;
     border-radius: 50px;
     display: block;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     justify-content: left;
     text-transform: uppercase;
-    opacity: 70%;
 }
 
 .text-inceput{
     text-align: center;
     font-size: 72px;
-    color: mediumslateblue;
+    color: #B4CFB0;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    margin-top: 30px;
-    margin-bottom: 50px;
-
+    margin: 30px;
+    padding: 5px 10px;
 }
 
-.active{
-    border-color: greenyellow;
-    border-width: 5px;
-}
 
 
 
