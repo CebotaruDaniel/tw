@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -36,11 +40,11 @@ body{
     height: 330px;
     width: 33%;
     float: left;
-    margin-right: 10px;
     border-radius: 50px;
     border-style: solid;
     border-width: 4px;
     margin-top: 70px;
+    margin-right: 20px;
 }
 
 .titlusection a,h4,h5{
@@ -50,7 +54,7 @@ body{
     font-size: 45px;
     text-align: left;
     opacity: 80%;
-    padding: 23px;
+    padding: 15px;
 
 }
 
@@ -58,17 +62,12 @@ body{
     font-size: 45px;
     font-family: 'Anton', sans-serif;
     border-style: solid;
-    border-radius: 50px;
+    border-radius: 10px;
     background-color: white;
     text-transform: uppercase;
     opacity: 70%;
     border-width: 4px;
-    padding: 5px 5px;
-    margin: 0;
-
-
-
-
+    padding: 5px 15px;
 }
 
 .text-despre{
@@ -78,8 +77,6 @@ body{
     border-width: 4px;
     display: block;
     justify-content: left;
-
-
 }
 
 .logo
@@ -100,14 +97,14 @@ body{
     border-style: solid;;
     margin-right: 25px;
     margin-left: 25px;
-    color: #362706;
     border-color: black;
     border-width: 1px;
-    -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: rgba(255, 251, 251, 0.93);
     text-decoration: none;
     font-size: 18px;
     opacity: 100%;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .navbar{
@@ -126,13 +123,13 @@ body{
 
 .navbar a:hover
 {
-    color: white;
+    color: #44c64c;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     transition: 1s
 }
 article{
-    margin: 20px;
+    margin: 30px;
 }
 
 article p
@@ -155,14 +152,12 @@ footer
     color: black;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 5px;
     border-style: solid;
     text-transform: uppercase;
     text-decoration: none;
-
 }
-
 
 
 .text1{
@@ -195,7 +190,7 @@ footer
     border-style: solid;
     border-width: 4px;
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-bottom: 15px;
 
 
@@ -208,12 +203,9 @@ footer
     border-style: solid;
     border-width: 4px;
     float:left;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-bottom: 15px;
-
-
-
-
+    margin-top: 20px;
 }
 
 .pret{
@@ -227,6 +219,12 @@ footer
 
 }
 
+a.active{
+    text-decoration: underline;
+    text-decoration-color: #519830;
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
+}
 
 
 
