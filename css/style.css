@@ -15,7 +15,6 @@ html{
 }
 
 body{
-    background-color: #E5E3C9;
     font-family: 'Anton', sans-serif;
     position: relative;
     padding-bottom: 100px;
@@ -76,10 +75,9 @@ body{
     width: 100%;
     max-width: 1200px;
     text-align: center;
-    margin: 0 -75px;
+    margin: 0 -73px;
 
 }
-
 
 .text2{
     text-align: center;
@@ -87,59 +85,6 @@ body{
     font-family: "serif";
     margin-top: 30px;
 }
-
-/* Navbar*/
-
-.logo
-{
-    text-align: center;
-    width: 100%;
-    -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.84);
-    font-size: 50px;
-    font-family: 'Bungee Shade', cursive;
-    color: #979a8d;
-}
-
-.navbar a {
-    background-color: rgba(169, 229, 234, 0.55);
-    border-radius: 10px;
-    padding: 8px;
-    border-style: solid;;
-    margin-right: 25px;
-    margin-left: 25px;
-    border-color: black;
-    border-width: 1px;
-    text-decoration: none;
-    font-size: 18px;
-    opacity: 100%;
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
-.navbar{
-    font-family: 'Anton', sans-serif;
-    background-color: #94B49F;
-    margin-bottom: 10px;
-    border-color: black;
-    padding: 1%;
-    border-style: solid;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    opacity: 90%;
-}
-
-
-.navbar a:hover
-{
-    color: #44c64c;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    transition: 1s
-}
-
 
 article p
 {
@@ -150,20 +95,6 @@ article p
     border-color: #B4CFB0;
     border-width: 10px;
 }
-
-.footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(148, 180, 159, 0.69);
-    color: black;
-     font-family: "Times New Roman", Times, serif;
-    text-align: center;
-     font-size: 20px;
-    border-style: solid;
-}
-
 
 .imagine-titlu{
     display: block;
@@ -188,7 +119,6 @@ article p
     align-items: center;
     justify-content: center;
 }
-
 
 .titlu-tipuri{
     margin-top: 50px;
@@ -236,28 +166,19 @@ a.active{
 .icon{
     max-width: 120px;
     margin-right: auto;
-    margin-left: 180px;
+    margin-left: 160px;
     display: block;
     margin-bottom: 10px;
 }
 
 .icon-margin{
     max-width: 120px;
-    margin-left: 170px;
+    margin-left: 210px;
     margin-bottom: 4px;
 }
 
-.row p{
-    background-color: rgba(169, 229, 234, 0.55);
-    display: inline;
-    margin-left: 190px;
-    border-width: 4px;
-    color: white;
-    padding: 0 10px;
-    border-radius: 5px;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-}
+
+
 
 
 
