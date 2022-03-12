@@ -1,20 +1,28 @@
-/* Navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
 
+/* Navbar*/
 .logo
 {
     text-align: center;
-    width: 100%;
-    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.84);
-    font-size: 50px;
-    font-family: 'Bungee Shade', cursive;
-    color: #eff1ec;
+    font-size: 40px;
+    color: rgb(74, 66, 66);
+    text-decoration-line: underline;
+    text-decoration-color: #f0f0f0;
+    text-decoration-thickness: 5px;
+    margin-right: 100px;
 }
 
 .navbar a {
-    background-color: rgba(169, 229, 234, 0.55);
+    background-color: rgb(54, 49, 49);;
     border-radius: 10px;
-    padding: 8px;
+    padding: 6px 10px;
     border-style: solid;;
     margin-right: 25px;
     margin-left: 25px;
@@ -26,6 +34,7 @@
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+
 }
 
 .navbar{
@@ -36,7 +45,7 @@
     padding: 1%;
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     opacity: 90%;
 }
 
@@ -60,6 +69,7 @@
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     font-size: 20px;
+    padding: 7px 7px;
 }
 
 /*/Body*/

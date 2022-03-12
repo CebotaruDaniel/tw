@@ -75,7 +75,7 @@ body{
     width: 100%;
     max-width: 1200px;
     text-align: center;
-    margin: 0 -73px;
+    margin: 0 -40px;
 
 }
 
@@ -137,11 +137,13 @@ article p
 .text-inceput{
     text-align: center;
     font-size: 72px;
-    color: #B4CFB0;
+    color: rgba(167, 203, 179, 0.98);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     margin: 30px;
     padding: 5px 10px;
+    background-color: rgba(244, 244, 240, 0.79);
+    border-radius: 100px;
 }
 
 a.active{
@@ -157,26 +159,40 @@ a.active{
     padding: 5px;
 }
 
+.row{
+    background-color: #f2f2f2;
+}
+
 .row::after {
     content: "";
     clear: both;
-    display: table;
+    display: block;
 }
 
 .icon{
-    max-width: 120px;
-    margin-right: auto;
-    margin-left: 160px;
     display: block;
-    margin-bottom: 10px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #B4CFB0;
 }
 
-.icon-margin{
-    max-width: 120px;
-    margin-left: 210px;
-    margin-bottom: 4px;
+
+div.row{
+    margin-left: 310px;;
+    width: 70%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
+
+.column p {
+    background-color: transparent;
+    border-width: 0;
+
+}
 
 
 
