@@ -4,37 +4,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200&family=Bebas+Neue&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
 
 /* Navbar*/
 .logo
 {
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: rgba(255, 255, 255, 0.84);
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.84);
     font-size: 40px;
-    color: rgb(74, 66, 66);
-    text-decoration-line: underline;
-    text-decoration-color: #f0f0f0;
-    text-decoration-thickness: 5px;
-    margin-left: 0;
+    color: rgb(255, 255, 255);
     margin-right: 100px;
+    background-color: rgba(192, 184, 184, 0);
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 20px;
+    font-family: 'Anton', cursive;
+}
+
+.logoimage{
+    max-width: 22px;
+    margin-right: 3px;
 }
 
 .navbar a {
     background-color: rgb(54, 49, 49);;
     border-radius: 10px;
-    padding: 6px 10px;
-    border-style: solid;;
-    margin-right: 25px;
-    margin-left: 25px;
-    border-color: white;
-    border-width: 1px;
+    padding: 5px 20px;
     text-decoration: none;
     font-size: 18px;
-    opacity: 100%;
-    color: white;
+    color: #f9f9f7;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    box-shadow: 1px 3px;
+    box-shadow: 1px 1px 5px #000000;
 
 }
 
@@ -46,7 +47,7 @@
     padding: 1%;
     align-items: center;
     display: flex;
-    justify-content: right;
+    justify-content: space-evenly;
     opacity: 90%;
 }
 

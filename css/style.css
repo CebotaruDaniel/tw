@@ -75,7 +75,7 @@ body{
     width: 100%;
     max-width: 1200px;
     text-align: center;
-    margin: 0 -72px;
+    margin: 0 -80px;
 
 }
 
@@ -173,6 +173,10 @@ article p
     background-color: #B4CFB0;
 }
 
+.icon:hover{
+    background-color: #4db47e;
+    transition: 0.8s;
+}
 
 div.row{
     margin-left: 307px;;
@@ -185,7 +189,6 @@ div.row{
 .column p {
     background-color: transparent;
     border-width: 0;
-
 }
 
 
