@@ -6,6 +6,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200&family=Bebas+Neue&family=Lobster&family=Luckiest+Guy&family=Shizuru&display=swap');
 
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    box-sizing: border-box;
+}
+
 /* Navbar*/
 .logo
 {
@@ -19,6 +31,7 @@
     padding: 2px;
     margin-left: 20px;
     font-family: 'Anton', cursive;
+    letter-spacing: 3px;
 }
 
 .logoimage{
@@ -36,7 +49,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     box-shadow: 1px 1px 5px #000000;
-
+    letter-spacing: 1px;
 }
 
 .navbar{

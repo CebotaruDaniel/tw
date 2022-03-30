@@ -1,6 +1,6 @@
 
-.text-inceput{
-    animation: transitionIn 2s;
+.text-inceput,.markets,.container-curiozitati,.container-faqs{
+    animation: transitionIn 1s;
 
 }
 
@@ -8,14 +8,11 @@
 
     from{
         opacity: 0;
-        transform: rotate(-1deg);
-
     }
 
     to{
         opacity: 1;
-        transform: rotate(0);
-
     }
 
 }
+

@@ -33,10 +33,6 @@ article p
     font-size: 30px;
     padding: 5px;
     background-color: #B4CFB0;
-    color: white;
-    font-family: 'Anton', sans-serif;
-    -webkit-text-stroke: 0.6px black;
-    opacity: 80%;
 }
 
 .text-despre{
@@ -50,7 +46,7 @@ article p
 }
 
 hr{
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 .imagine{
@@ -113,5 +109,41 @@ a.active{
     -webkit-text-stroke: 1px black;
     opacity: 80%;
     padding: 10px;
+}
+
+.read-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 10px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    opacity: 80%;
+}
+
+.read-more a,h1{
+    color: #fffefe;
+    -webkit-text-stroke: 0.6px black;
+}
+.read-more a{
+    background: #94B49F;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-decoration: none;
+    opacity: 80%;
+}
+
+.clicked{
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    -webkit-text-stroke: 0.6px black;
+    opacity: 80%;
+    color: white;
 }
 
