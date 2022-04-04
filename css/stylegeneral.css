@@ -70,7 +70,8 @@ html{
     color: #44c64c;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    transition: 1s
+    transition: 0.7s;
+    padding: 7px 23px;
 }
 
 /*/Footer*/
@@ -85,6 +86,7 @@ html{
     text-align: center;
     font-size: 20px;
     padding: 7px 7px;
+
 }
 
 /*/Body*/
