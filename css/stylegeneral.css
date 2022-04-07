@@ -67,11 +67,10 @@ html{
 
 .navbar a:hover
 {
-    color: #44c64c;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     transition: 0.7s;
-    padding: 7px 23px;
+    padding: 10px 30px;
 }
 
 /*/Footer*/
@@ -96,7 +95,8 @@ body{
 }
 
 a.active{
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: #f0f0f0;
+    padding: 10px 30px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.69);
+
 }
