@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+
+}
+
+body{
+    background-color: #E5E3C9;
+    font-family: 'Anton', sans-serif;
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+
+.text1{
+    text-align: center;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.imagine {
+    float: left;
+    margin-right: 10px;
+    width: 30%;
+    border-radius: 50px;
+}
+
+.nft1{
+    height: 330px;
+    width: 33%;
+    float: left;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    margin-top: 70px;
+    margin-right: 20px;
+}
+
+.titlusection a,h4,h5{
+    color: black;
+    font-family: 'Luckiest Guy', cursive;
+    text-decoration: none;
+    font-size: 45px;
+    text-align: left;
+    opacity: 80%;
+    padding: 15px;
+
+}
+
+.titlusection a{
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: white;
+    text-transform: uppercase;
+    opacity: 70%;
+    border-width: 4px;
+    padding: 5px 15px;
+}
+
+.text-despre{
+    font-size: 17px;
+    font-family: 'Anton', sans-serif;
+    margin-top: 30px;
+    border-width: 4px;
+    display: block;
+    justify-content: left;
+}
+
+article{
+    margin: 30px;
+}
+
+article p
+{
+    border-radius: 60px;
+    padding: 10px;
+    border-style: solid;
+    background-color: rgba(218, 231, 218, 0.95);
+    border-color: #B4CFB0;
+    border-width: 1px;
+}
+
+.text1{
+    background-color: #90E0EF;
+    border-radius: 200px;
+    padding: 10px;
+    border-style: solid;
+}
+
+.titlu-intro{
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    border-style: solid;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    background-color: #B4CFB0;;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.4px white;
+    opacity: 80%;
+    margin-bottom: 30px;
+    border-width: 4px;
+
+}
+
+#nft2{
+    height: 330px;
+    width: 33%;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+
+}
+
+.nft3{
+    height: 350px;
+    width: 33%;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.pret{
+
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+    color: greenyellow;
+    padding-top: 10px;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: black;
+
+}
+
+
+
+

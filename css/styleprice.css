@@ -1,0 +1,118 @@
+
+
+.container,.coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pret-coin{
+    background: rgba(148, 180, 159, 0.69);
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    border-radius: 50px;
+}
+
+.container{
+    position: relative;
+    padding: 20px 70px;
+}
+.pret-coin p{
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+h1, h2{
+    background-color: rgba(54, 49, 49, 0.79);
+    border-radius: 30px;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 0.03em;
+    -webkit-text-stroke-color: black;
+}
+
+.pret-coin img{
+    max-width: 30%;
+    position: relative;
+}
+
+.bnb , .eth , .sol ,.ltc,.btc,.doge{
+    width: 33%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    border-color: black;
+}
+
+.row{
+    margin-top: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.icon{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    background: #E5E3C9;
+}
+
+.icon:hover{
+    width: 55%;
+    transition: 0.3s;
+}
+
+
+
+.column p {
+    background-color: transparent;
+    border-width: 0;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+.exchange{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    background: rgba(148, 180, 159, 0.69);
+    max-width: 80%;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+.exchange p{
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 24px;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.monede{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+

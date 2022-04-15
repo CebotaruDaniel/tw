@@ -1,0 +1,18 @@
+
+.text-inceput,.markets,.container-curiozitati,.container-faqs,.main-container{
+    animation: transitionIn 1s;
+
+}
+
+@keyframes transitionIn {
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+
+}
+
