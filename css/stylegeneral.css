@@ -40,7 +40,7 @@ html{
 }
 
 .navbar a {
-    background-color: rgb(54, 49, 49);;
+    background-color: rgb(54, 49, 49);
     border-radius: 10px;
     padding: 5px 20px;
     text-decoration: none;
@@ -100,3 +100,4 @@ a.active{
     border-color: rgba(255, 255, 255, 0.69);
 
 }
+
