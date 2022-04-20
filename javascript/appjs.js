@@ -54,5 +54,3 @@ const getBtcData = async () => {
 }
 getBtcData();
 
-
-icon = document.getElementById()

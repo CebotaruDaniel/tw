@@ -83,8 +83,9 @@ html{
     color: black;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 20rem;
     padding: 7px 7px;
+
 }
 
 /*/Body*/
@@ -93,30 +94,9 @@ body{
     background-color: #E5E3C9;
 }
 
-:root{
-    --primarycolor : black;
-    --secoondarycolor: white;
-}
-
-
-
 a.active{
     padding: 10px 30px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.69);
 
 }
-
-.footer-relative{
-    position: page;
-    left: 0;
-    width: 100%;
-    background-color: rgba(148, 180, 159, 0.69);
-    color: black;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    font-size: 20px;
-    padding: 7px 7px;
-}
-
-
