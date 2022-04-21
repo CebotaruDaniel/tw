@@ -18,6 +18,21 @@ html{
     box-sizing: border-box;
 }
 
+.house{
+    max-width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login a{
+    background-color: white;
+    margin-top: 5px;
+    padding: 10px 30px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.69);
+}
+
 /* Navbar*/
 .logo
 {
@@ -50,6 +65,10 @@ html{
     -webkit-text-stroke-color: black;
     box-shadow: 1px 1px 5px #000000;
     letter-spacing: 1px;
+    text-transform: none;
+    padding: 10px 30px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.69);
 }
 
 .navbar{
@@ -67,10 +86,8 @@ html{
 
 .navbar a:hover
 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    transition: 0.7s;
-    padding: 10px 30px;
+   background-color: #000000ae;
+   transition: 0.3s;
 }
 
 /*/Footer*/
@@ -85,7 +102,6 @@ html{
     text-align: center;
     font-size: 20px;
     padding: 7px 7px;
-
 }
 
 /*/Body*/
@@ -95,9 +111,6 @@ body{
 }
 
 a.active{
-    padding: 10px 30px;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.69);
-
+    background-color: rgb(80, 55, 55);
 }
 
