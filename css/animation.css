@@ -1,6 +1,6 @@
 
-.text-inceput,.markets,.container-curiozitati,.container-faqs,.main-container,.container-contact,.informatie{
-    animation: transitionIn 1s;
+.text-inceput,.markets,.container-curiozitati,.container-faqs,.main-container,.container-contact,.informatie,.container-total{
+    animation: transitionIn 1.5s;
 
 }
 

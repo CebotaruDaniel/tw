@@ -3,45 +3,68 @@ $(document).ready(function() {
       errorClass: "error fail-alert",
       validClass: "valid success-alert",
       rules: {
-        name : {
+        login : {
           required: true,
           minlength: 3
         },
-        age: {
+        password: {
           required: true,
-          number: true,
-          min: 18
+          minlength: 5
         },
         email: {
           required: true,
           email: true
         },
-        weight: {
-          required: {
-            depends: function(elem) {
-              return $("#age").val() > 50
-            }
-          },
+        emailrepetat: {
+          email:true,
+          required: true,
+          equalTo: "#email"
+        },
+        numar: {
+          required:true,
           number: true,
-          min: 0
-        }
+          },
+          loginsaved: {
+            required:true,
+            equalTo: "#login"
+            },
+            passwordsaved: {
+              required:true,
+              equalTo: "#password"
+              },
       },
       messages : {
-        name: {
-          minlength: "Name should be at least 3 characters"
+        login: {
+          minlength: "*Login-ul trebuie sa fie de cel putin 3 caractere*",
+          required: "*Introduceti loginul care doriti sa-l creati*"
         },
-        age: {
-          required: "Please enter your age",
-          number: "Please enter your age as a numerical value",
-          min: "You must be at least 18 years old"
+        password: {
+          required: "*Introduceti parola*",
+          minlength: "*Parola trebuie sa fie de minim 5 caractere*"
         },
         email: {
-          email: "The email should be in the format: abc@domain.tld"
+          email: "*Posta de email trebuie sa fie de forma abc@gmail.com*",
+          required :"*Trebuie sa introduci posta de email*"
         },
-        weight: {
-          required: "People with age over 50 have to enter their weight",
-          number: "Please enter your weight as a numerical value"
+        emailrepetat: {
+          email: "*Posta de email trebuie sa fie de forma abc@gmail.com*",
+          required :"*Trebuie sa introduci posta de email*",
+          equalTo: "*Posta de email trebuie sa fie ca cea anterioara*"
+        },
+        numar: {
+          required: "*Introduceti numarul de telefon*",
+          number: "*Numarul de telefon nu a fost scris corect*"
+        },
+        loginsaved: {
+          required: "*Introduceti login-ul creat*",
+          equalTo: "*Login-ul nu este corect*"
+        },
+        passwordsaved: {
+          required: "*Introduceti parola contului*",
+          equalTo: "*Parola nu este corecta*"
         }
       }
     });
+
+
   });
