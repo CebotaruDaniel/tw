@@ -54,14 +54,14 @@ $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})
         <div class="navbar">
             <h1 class="logo"> <img class ="logoimage" src="../imagini-icon/ethsvg.png" alt="logopng">ENCRYPTED</h1>
             <a  class="navbar-items" href="../index.html" ><img class="house" src="../imagini-icon/house.png" alt=""></a>
-            <a class="active" href="curiozitati.html">Curiozitati</a>
+            <a class="navbar-items" href="curiozitati.html">Curiozitati</a>
             <a  class="navbar-items" href="faqs.html" >FAQ'S</a>
             <a  class="navbar-items" href="price.html" >CoinPrice</a>
             <a  class="navbar-items" href="market.html" >Market</a>
-            <a  class="navbar-items" href="contact.php" >Contact</a>
+            <a  class="active" href="contact.php" >Contact</a>
             <div class="login">
-              <a  class="house" href="index.html" ><img class="house" src="../imagini-icon/login.png" alt=""></a>
-              <a  class="house" href="index.html" ><img class="house" src="../imagini-icon/add-user.png" alt=""></a>
+              <a  class="house" href="login.html" ><img class="house" src="../imagini-icon/login.png" alt=""></a>
+              <a  class="house" href="login.html" ><img class="house" src="../imagini-icon/add-user.png" alt=""></a>
           </div>
         </div>
 </header>
