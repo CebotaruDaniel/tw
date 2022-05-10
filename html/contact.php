@@ -73,7 +73,7 @@ $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})
     <span class="success"><?php echo $succes;?></span>
       <input type="text" placeholder="Cum va numiti?"  name="nume" value="<?= $nume?>"><br>
       <span class="error"><?php echo $nameErr;?></span>
-      <input type="email" placeholder="Introduceti adresa de email"  name="posta" value="<?= $posta?>"><br>
+      <input type="text" placeholder="Introduceti adresa de email"  name="posta" value="<?= $posta?>"><br>
       <span class="error"><?php echo $mailErr;?></span>
       <textarea name="help" placeholder="Explicati problema dumneavoastra !" rows="5" cols="40" value="<?= $help?>"></textarea><br>
       <span class="error"><?php echo $helpErr;?></span>

@@ -52,6 +52,6 @@ const getBtcData = async () => {
             document.getElementById("pret-doge").innerHTML = '<b class="coin">' + data.USD + ' USD</b>'
         });
 }
-getBtcData();
+
 
 
