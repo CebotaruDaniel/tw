@@ -1,0 +1,20 @@
+----------------------------------
+Login client : dsdadas
+Parola : dsdasdas
+Email : dsada@mail.ru
+Numar : 31321321
+----------------------------------
+Login client : dasdasasd
+Parola : dadasdasdads
+Email : dsadsa@mail.ru
+Numar : 31232131231
+----------------------------------
+Login client : adadsad
+Parola : adasdasdasda
+Email : dasdads@mail.ru
+Numar : 2131321312312
+----------------------------------
+Login client : dasdas
+Parola : dassdasd
+Email : dsda@mail.ru
+Numar : 312312

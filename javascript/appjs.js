@@ -18,37 +18,32 @@ const getBtcData = async () => {
     fetch('https://min-api.cryptocompare.com/data/price?fsym=BNB&tsyms=USD')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+
             document.getElementById("pret-bnb").innerHTML = '<b class="coin">' + data.USD + ' USD</b>'
         });
     fetch('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             document.getElementById("pret-eth").innerHTML = '<b class="coin">' + data.USD + ' USD</b>'
         });
     fetch('https://min-api.cryptocompare.com/data/price?fsym=SOL&tsyms=USD')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             document.getElementById("pret-sol").innerHTML = '<b class="coin">' + data.USD + ' USD</b>'
         });
     fetch('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             document.getElementById("pret-btc").innerHTML = '<b class="coin">' + data.USD + ' USD</b>'
         });
     fetch('https://min-api.cryptocompare.com/data/price?fsym=LTC&tsyms=USD')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             document.getElementById("pret-ltc").innerHTML = '<b class="coin">' + data.USD + ' USD</b>'
         });
     fetch('https://min-api.cryptocompare.com/data/price?fsym=DOGE&tsyms=USD')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             document.getElementById("pret-doge").innerHTML = '<b class="coin">' + data.USD + ' USD</b>'
         });
 }

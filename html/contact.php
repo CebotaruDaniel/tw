@@ -5,6 +5,14 @@
     <link rel="stylesheet" href="/css/stylegeneral.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="/css/stylecontact.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="/css/animation.css?v=<?php echo time(); ?>">
+      <!--Script JQUERY -->
+  <!--Script JQUERY -->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!--Plugin JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  <!--Fisier Javascript Local -->
+  <script src="../javascript/form-validation.js"></script>
+  <title>Document</title>
 </head>
 <body>  
 
@@ -25,10 +33,10 @@ $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})
             $nameErr = "* Introduceti numele,prenumele";
         }  
         if(!preg_match($pattern,$posta)){
-            $mailErr = "* Email-ul nu este valid!";
+            $mailErr = "*Email-ul nu este valid!";
         }
         if(empty($help)){
-            $helpErr = "* Introduceti problema cu care v-ati confruntat";
+            $helpErr = "*Introduceti problema cu care v-ati confruntat";
         }
         if(empty($nameErr) && empty($mailErr) && empty($helpErr)){
             fprintf($fp,"----------------------------------\n");
@@ -60,42 +68,26 @@ $pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})
             <a  class="navbar-items" href="market.html" >Market</a>
             <a  class="active" href="contact.php" >Contact</a>
             <div class="login">
-              <a  class="house" href="login.html" ><img class="house" src="../imagini-icon/login.png" alt=""></a>
-              <a  class="house" href="login.html" ><img class="house" src="../imagini-icon/add-user.png" alt=""></a>
+              <a  class="house" href="logare.php" ><img class="house" src="../imagini-icon/login.png" alt=""></a>
+              <a  class="house" href="login.php" ><img class="house" src="../imagini-icon/add-user.png" alt=""></a>
           </div>
         </div>
 </header>
 
 <div class="container-contact">
     <h2>Contacteaza-ne</h2>
-    <form method="post" action="contact.php">  
+    <span class="error"><?php echo $nameErr;?></span>
+    <span class="error"><?php echo $mailErr;?></span>
+    <span class="error"><?php echo $helpErr;?></span>
     <span class="error"><?php echo $error;?></span>
     <span class="success"><?php echo $succes;?></span>
-      <input type="text" placeholder="Cum va numiti?"  name="nume" value="<?= $nume?>"><br>
-      <span class="error"><?php echo $nameErr;?></span>
-      <input type="text" placeholder="Introduceti adresa de email"  name="posta" value="<?= $posta?>"><br>
-      <span class="error"><?php echo $mailErr;?></span>
-      <textarea name="help" placeholder="Explicati problema dumneavoastra !" rows="5" cols="40" value="<?= $help?>"></textarea><br>
-      <span class="error"><?php echo $helpErr;?></span>
-      <br>
+    <form id="form-support" method="post" action="contact.php">  
+      <input type="text" placeholder="Cum va numiti?" id="nume" name="nume" value="<?= $nume?>">
+      <input type="text" placeholder="Introduceti adresa de email" id="posta" name="posta" value="<?= $posta?>">
+      <textarea name="help" placeholder="Explicati problema dumneavoastra !" rows="5" cols="40" value="<?= $help?>"></textarea>
       <input class="buton-submit" type="submit" name="submit" value="Trimite">  
 </form>
-</div><br><br>
 
- <div class="informatie">
-     <h1>Telefon</h3>
-     <div class="numere">
-        <p>060760375 & 070760375</p>
-     </div>
-
-     <div class="email">
-        <h2>Adresa email support</h1>
-        <p>encryptedsupport@gmail.com</p><br>
-     </div>
-     <p>Support-ul site-ului nostru lucreaza 24/24 , pentru intrebari vizitati pagina <a href="faqs.html"><span>FAQ'S</span></a></p>
-
-
- </div>
 
 
 </body>
