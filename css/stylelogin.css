@@ -125,7 +125,8 @@ h1{
   color: rgba(172, 255, 47, 0.453);
   -webkit-text-stroke: black;
   -webkit-text-stroke-width: 0.3px;
-
+  padding: 3px 3px;
+  border-radius: 5px;
 }
 
 .error {
@@ -136,11 +137,44 @@ h1{
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 100%;
+  padding: 3px 3px;
+  border-radius: 5px;
 }
 
 ::placeholder {
   color: black;
   font-size: 25px;
   opacity: 30%;
+}
+
+.registerC{
+  font-size : 14px;
+  margin-top : 1px;
+  margin-top: 10px;
+}
+
+.registerC a{
+  color : #ffffff;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 0.3px;
+  text-decoration: none;
+  background-color: black;
+  padding: 3px 3px;
+  border-radius: 5px;
+}
+
+.loginC{
+  font-size : 14px;
+  margin-top : 1px;
+  margin-top: 10px;
+}
+
+.loginC a{
+  color : #ffffff;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 0.3px;
+  text-decoration: none;
+  background-color: black;
+  padding: 3px 3px;
+  border-radius: 5px;
 }
