@@ -22,7 +22,7 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
 <body>
 	<nav class="navbar navbar-expand-lg">
 		<div class="container-fluid">
-			<a class="navbar-brand logo" href="#">
+			<a class="navbar-brand logo" href="/index.php">
 				<img src="/poze/loog.png" alt="Bootstrap" width="100rem" height="50rem">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -38,17 +38,16 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
 						<a class="nav-link" target="_blank" href="https://ro.wikipedia.org/wiki/Fra%C8%9Bii_Grimm">Autor</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/index.php">Priveste Desenul Animat</a>
+						<a class="nav-link" href="/index.php#desen">Priveste Desenul Animat</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Mai Multe
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="drop" href="/index.php">Zodiile</a></li>
-							<li><a class="drop" href="/index.php">F.A.Q</a></li>
+							<li><a class="drop" href="/index.php#carte">Zodiile</a></li>
+							<li><a class="drop" href="/index.php#faq">F.A.Q</a></li>
 							<li><a class="drop" href="/php/modify.php">Modifica</a></li>
-							<li><a class="drop" href="/php/connect.php">Modifica</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -74,7 +73,7 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
     </tr>
     <?php while($resultPersonaje = $sqlPersonaje->fetch_assoc()) {?>
     <tr>
-        <form action="./databaseUpdate.php" method='POST'>
+        <form action="./update.php" method='POST'>
             <td><?php echo $resultPersonaje['id_personaje'] ?></td>
             <td><input type="text" name="nume_personaje" required value="<?php echo $resultPersonaje['nume_personaje'] ?>"/></td>
             <td><input  type='hidden' name='id_personaje' value="<?php echo$resultPersonaje['id_personaje']?>"/>
@@ -94,7 +93,7 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
     </tr>
     <?php while($resultCalitati = $sqlCalitati->fetch_assoc()) {?>
     <tr>
-        <form action="./databaseUpdate.php" method='POST'>
+        <form action="./update.php" method='POST'>
             <td><?php echo $resultCalitati['id_personaje'] ?></td>
             <td><?php echo $resultCalitati['nume_personaje'] ?></td>
             <td><?php echo $resultCalitati['id_calitati'] ?></td>
@@ -116,7 +115,7 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
     </tr>
     <?php while($resultConsecinta = $sqlConsecinta->fetch_assoc()) {?>
     <tr>
-        <form action="./databaseUpdate.php" method='POST'>
+        <form action="./update.php" method='POST'>
             <td><?php echo $resultConsecinta['id_eveniment'] ?></td>
             <td><?php echo $resultConsecinta['nume_eveniment'] ?></td>
             <td><?php echo $resultConsecinta['id_consecinta'] ?></td>
@@ -138,7 +137,7 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
     </tr>
     <?php while($resultEveniment = $sqlEveniment->fetch_assoc()) {?>
     <tr>
-        <form action="./databaseUpdate.php" method='POST'>
+        <form action="./update.php" method='POST'>
             <td><?php echo $resultEveniment['id_consecinta'] ?></td>
             <td><?php echo $resultEveniment['nume_consecinta'] ?></td>
             <td><?php echo $resultEveniment['id_eveniment'] ?></td>
@@ -148,9 +147,9 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
         </form><?php } ?>
     </tr>
 </table>
-<hr>
+<hr id="locatia">
 <h2 style="text-align: center" class="texttabel">Modifica locatii din poveste</h2>
-<table id="locatia" class="modifPersonaje">
+<table  class="modifPersonaje">
     <tr>
         <th>ID Locatie</th>
         <th>Nume Locatie</th>
@@ -158,7 +157,7 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
     </tr>
     <?php while($resultConsecinta = $sqlLocatia->fetch_assoc()) {?>
     <tr>
-        <form action="./databaseUpdate.php" method='POST'>
+        <form action="./update.php" method='POST'>
             <td><?php echo $resultConsecinta['id_locatie'] ?></td>
             <td><input type="text" name="nume_locatie" value="<?php echo $resultConsecinta['nume_locatie']?>" /></td>
             <td><input  type='hidden' name='id_locatie' value="<?php echo $resultConsecinta['id_locatie']?>"/>
@@ -178,7 +177,7 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
         <form action="" method='POST'>
 				<td><input  type='text' name='id_personaje_nou' placeholder="ID-Nou" value=""/></td>
 				<td><input  type='text' name='nume_personaje_nou' placeholder="Nume Personaj" value=""/></td>
-				<td><input type='submit' name='submit' value='🛠️'> </td>
+				<td><input type='submit' name='submit' value='➕'> </td>
         </form>
     </tr>
 </table>
@@ -192,12 +191,26 @@ $calitati = mysqli_query($connection, "SELECT * FROM calitati");
     <tr>
         <form action="" method='POST'>
 				<td><input  type='text' name='get_id' placeholder="ID-personaj" value=""/></td>
-				<td><input type='submit' name='delete_submit' value='🛠️'> </td>
+				<td><input type='submit' name='delete_submit' value='🗑️'> </td>
         </form>
     </tr>
 </table>
 <hr>
+<footer class="bg-light text-center text-lg-start foooter">
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: #f49e9e;">
+				With ❤️ by
+				<a class="text-dark nounderline" href="#"><b>Cebotaru Daniel</b></a>
+			</div>
+			<!-- Copyright -->
+		</footer>
 	</div>
-
+	<script src="/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+			integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+			crossorigin="anonymous"></script>
 </body>
 </html>

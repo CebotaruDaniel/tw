@@ -148,3 +148,17 @@ hr{
 	font-size: 1.2rem;
 	color: #f49e9e;
 }
+
+.nounderline{
+	text-decoration: none;
+	font-family: serif;
+	text-transform: uppercase;
+}
+
+.foooter{
+	width: 100%;
+}
+
+.dropdown-menu a{
+	text-decoration: none;
+}
