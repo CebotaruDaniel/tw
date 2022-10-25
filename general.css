@@ -381,3 +381,8 @@ td{
 	font-family: serif;
 	text-transform: uppercase;
 }
+
+span{
+	font-weight: bold;
+	color: #f49e9e;
+}

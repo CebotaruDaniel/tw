@@ -1,11 +1,13 @@
 <?php 
 include 'connect.php';
+include 'adaugare.php';
 $connection =new mysqli('localhost','root','','povestea');
 $sqlPersonaje = mysqli_query($connection, "SELECT * FROM personaje");
 $sqlCalitati = mysqli_query($connection, "SELECT * FROM personaje natural join calitati ");
 $sqlConsecinta = mysqli_query($connection, "SELECT * FROM evenimente natural join consecinte ");
 $sqlEveniment = mysqli_query($connection, "SELECT * FROM consecinte natural join evenimente");
 $sqlLocatia = mysqli_query($connection, "SELECT * FROM locatia");
+$calitati = mysqli_query($connection, "SELECT * FROM calitati");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -162,6 +164,36 @@ $sqlLocatia = mysqli_query($connection, "SELECT * FROM locatia");
             <td><input  type='hidden' name='id_locatie' value="<?php echo $resultConsecinta['id_locatie']?>"/>
                 <input type='submit' name='id_locatiee' value='🛠️'> </td>
         </form><?php } ?>
+    </tr>
+</table>
+<hr>
+<h2 style="text-align: center" class="texttabel">Adauga personaje</h2>
+<table  class="modifPersonaje">
+    <tr>
+        <th>ID</th>
+        <th>Personajul</th>
+        <th>Adauga</th>
+    </tr>
+    <tr>
+        <form action="" method='POST'>
+				<td><input  type='text' name='id_personaje_nou' placeholder="ID-Nou" value=""/></td>
+				<td><input  type='text' name='nume_personaje_nou' placeholder="Nume Personaj" value=""/></td>
+				<td><input type='submit' name='submit' value='🛠️'> </td>
+        </form>
+    </tr>
+</table>
+<hr>
+<h2 style="text-align: center" class="texttabel">Sterge unul din personaje</h2>
+<table  class="modifPersonaje">
+    <tr>
+        <th>ID</th>
+        <th>Sterge</th>
+    </tr>
+    <tr>
+        <form action="" method='POST'>
+				<td><input  type='text' name='get_id' placeholder="ID-personaj" value=""/></td>
+				<td><input type='submit' name='delete_submit' value='🛠️'> </td>
+        </form>
     </tr>
 </table>
 <hr>

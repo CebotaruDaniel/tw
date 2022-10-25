@@ -5,9 +5,25 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $connection =new mysqli('localhost','root','','povestea');
 
-for($i = 1; $i <= 8; $i++) {
+for($i = 1; $i <= 20; $i++) {
     $personaje[$i] = mysqli_query($connection, "SELECT nume_personaje FROM personaje where id_personaje=$i");
     $resPersonaje[$i] = $personaje[$i]->fetch_assoc();
+}
+for($i = 1; $i <= 20; $i++) {
+	$calitati[$i] = mysqli_query($connection, "SELECT nume_calitate FROM calitati where id_calitati=$i");
+	$resCalitati[$i] = $calitati[$i]->fetch_assoc();
+}
+for($i = 1; $i <= 20; $i++) {
+	$consecinta[$i] = mysqli_query($connection, "SELECT nume_consecinta FROM consecinte where id_consecinta=$i");
+	$resConsecinta[$i] = $consecinta[$i]->fetch_assoc();
+}
+for($i = 1; $i <= 20; $i++) {
+	$eveniment[$i] = mysqli_query($connection, "SELECT nume_eveniment FROM evenimente where id_eveniment=$i");
+	$resEveniment[$i] = $eveniment[$i]->fetch_assoc();
+}
+for($i = 1; $i <= 20; $i++) {
+	$locatia[$i] = mysqli_query($connection, "SELECT nume_locatie FROM locatia where id_locatie=$i");
+	$resLocatia[$i] = $locatia[$i]->fetch_assoc();
 }
 ?>
 
@@ -94,31 +110,31 @@ for($i = 1; $i <= 8; $i++) {
 				</div>
 				<hr>
 				<p class="rezumat">
-					A fost odată un om văduv <span><?php echo $resPersonaje[1]['nume_personaje'];?><span>, care s-a căsătorit pentru a doua oară cu o <span><?php echo $resPersonaje[1]['nume_personaje'];?><span> femeie  și <span><?php echo $resPersonaje[1]['nume_personaje'];?><span>. Ea
-					avea două fiice, care la rândul lor erau încrezute. Prima sa soţie a avut o fiică frumoasă, care era o fată de
-					o bunătate extraordinară şi cu o fire blândă pe nume Ella. Împreună cu fiicele ei Anastasia si Drizella , mama
-					vitregă Lady Tremaine o punea la toate treburile casnice , din aceasta cauza nu putea pleca la bal. Seara,
-					când fata îşi termina treburile, se culca lângă foc. Din această cauză, era totdeauna murdară de cenușă, de
-					unde şi porecla de Cenușăreasa. Biata fată nu îndrăznea să îi spună tatălui ei ceea ce îndura. Într-o zi,
-					prințul Keith a invitat toate domnișoarele din ținut la un bal in castel pentru a-şi putea alege o soție. Cele
-					două surori vitrege au început vesele să îşi pregătească garderoba în timp ce biata Cenuşăreasa le privea cu
+					A fost odată un om văduv <span><?php echo $resPersonaje[2]['nume_personaje'];?></span>, care s-a căsătorit pentru a doua oară cu o femeie <span><?php echo $resCalitati[3]['nume_calitate'];?></span> și <span><?php echo $resCalitati[4]['nume_calitate'];?></span>. Dupa ce <span><?php echo $resEveniment[6]['nume_eveniment'];?></span> ,sotia sa cu ficele controlau tot in casa.Ea
+					avea două fiice, care la rândul lor erau <span><?php echo $resCalitati[6]['nume_calitate'];?></span>.Prima sa soţie a avut o fiică <span><?php echo $resCalitati[5]['nume_calitate'];?></span>, care era o fată 
+					 cu o fire <span><?php echo $resCalitati[1]['nume_calitate'];?></span> pe nume <span><?php echo $resPersonaje[3]['nume_personaje'];?></span>. Împreună cu fiicele ei <span><?php echo $resPersonaje[4]['nume_personaje'];?></span> si <span><?php echo $resPersonaje[5]['nume_personaje'];?></span> , mama
+					vitregă <span><?php echo $resPersonaje[6]['nume_personaje'];?></span> o punea <span><?php echo $resEveniment[2]['nume_eveniment'];?></span> , din aceasta cauza <span><?php echo $resConsecinta[1]['nume_consecinta'];?></span>. Seara,
+					când fata îşi termina treburile,<span><?php echo $resEveniment[1]['nume_eveniment'];?></span> <span><?php echo $resLocatia[1]['nume_locatie'];?></span>. Din această cauză,<span><?php echo $resConsecinta[2]['nume_consecinta'];?></span> , de
+					unde şi porecla de <span><?php echo $resPersonaje[1]['nume_personaje'];?></span>. <span><?php echo ucfirst($resCalitati[1]['nume_calitate']);?></span> fată nu îndrăznea să îi spună tatălui ei ceea ce îndura. Într-o zi,
+					prințul <span><?php echo $resPersonaje[8]['nume_personaje'];?></span> a invitat toate domnișoarele din ținut la un bal <span><?php echo $resLocatia[2]['nume_locatie'];?></span> pentru a-şi putea alege o soție. Cele
+					două surori vitrege au început vesele să îşi pregătească garderoba pentru ca <span><?php echo $resEveniment[5]['nume_eveniment'];?></span> ,în timp ce biata <span><?php echo $resPersonaje[1]['nume_personaje'];?></span> le privea cu
 					drag. Însă ele o tachinau spunându-i că o servitoare nu ar putea participa niciodată la un bal. După ce
-					surorile ei au plecat, ea a izbucnit în plâns sub alunul de la mormântul mamei sale. Atunci şi-a făcut
-					apariția în alun o porumbiță albă, care i-a promis că o va ajuta să participe la bal. Apoi i-a dat o rochie
+					surorile ei au plecat, ea a izbucnit în plâns <span><?php echo $resLocatia[3]['nume_locatie'];?></span> de la mormântul mamei sale. Atunci şi-a făcut
+					apariția în alun o <span><?php echo $resPersonaje[7]['nume_personaje'];?></span>, care i-a promis că o va ajuta să participe la bal. Apoi i-a dat o rochie
 					frumoasă și o delicată pereche de pantofi. Porumbița i-a spus să se întoarcă acasă înainte de miezul nopţii,
 					deoarece după ora douăsprezece vraja se va rupe. La bal, cu toții au fost fascinați de această domnișoară, în
-					special prințul Keith care a dansat tot timpul cu ea. Nici surorile vitrege nu au recunoscut-o. Înainte de
-					miezul nopţii şi-a adus aminte să plece. Întoarsă acasă, ea i-a mulţumit porumbiței, apoi şi-a salutat
-					surorile care nu se opreau din a vorbi despre frumoasa fată de la bal pe care nu o cunoştea nimeni. Cu
-					ajutorul porumbiței ea a participat la bal şi în seara următoare, fermecându-l pe prinț chiar mai mult. Și de
+					special prințul <span><?php echo $resPersonaje[8]['nume_personaje'];?></span> care a dansat tot timpul cu ea. Nici surorile vitrege nu au recunoscut-o. Înainte de
+					miezul nopţii şi-a adus aminte să plece. Întoarsă <span><?php echo $resLocatia[5]['nume_locatie'];?></span>, ea i-a mulţumit porumbiței, apoi şi-a salutat
+					surorile care nu se opreau din a vorbi despre <span><?php echo $resCalitati[5]['nume_calitate'];?></span> fată de la bal pe care nu o cunoştea nimeni. Cu
+					ajutorul <span><?php echo $resPersonaje[7]['nume_personaje'];?></span> ea a participat la bal şi în seara următoare, <span><?php echo $resEveniment[3]['nume_eveniment'];?></span> chiar mai mult. Și de
 					această dată ea a plecat doar la ultima bătaie a ceasului care anunța miezul nopții. A treia noapte s-a
-					petrecut la fel, dar în graba ei şi-a pierdut un pantof coborând pe treptele palatului. Prinţul a urmărit-o,
+					petrecut la fel, dar <span><?php echo $resEveniment[4]['nume_eveniment'];?></span> <span><?php echo $resConsecinta[4]['nume_consecinta'];?></span> coborând pe treptele palatului. Prinţul a urmărit-o,
 					dar nu a mai putut-o prinde, însă, în urma ei a găsit pantoful pierdut şi a promis că o va găsi pe fata căreia
 					îi aparţine şi o va lua de soţie. Prinţul a încercat pantoful pe toate fetele din ţinut. Surorile vitrege au
-					încercat în zadar și ele, dar în ciuda batjocoririlor pe care i le adresau Cenușăresei, acesteia i s-a
+					încercat în zadar și ele, dar în ciuda batjocoririlor pe care i le adresau, acesteia i s-a
 					potrivit perfect pantoful. Apoi s-a încălţat şi cu celălalt pantof pentru a risipi orice urmă de îndoială că
 					aceștia nu i-ar aparține. La vederea acestui lucru mama și surorile vitrege au încremenit de invidie. Prințul
-					a luat-o pe Cenușăreasa pe cal și au pornit către palat, unde au făcut o nuntă mare, petrecând trei zile și
+					a luat-o pe <span><?php echo $resPersonaje[1]['nume_personaje'];?></span> pe cal și au pornit către <span><?php echo $resLocatia[4]['nume_locatie'];?></span>, unde <span><?php echo $resConsecinta[3]['nume_consecinta'];?></span>, petrecând trei zile și
 					trei nopți.
 				</p>
 				<p class="final">Sfârșit</p>
