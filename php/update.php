@@ -1,48 +1,61 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 include 'connect.php';
-$connection =new mysqli('localhost','root','','povestea');
+$connection =new mysqli('localhost','root','','cereale');
 
-if(isset($_POST['id_personaje'])){
-    if(!empty($_POST['nume_personaje'])) {
-    $sqlPersonaje="UPDATE personaje SET nume_personaje = '".$_POST['nume_personaje']."' WHERE`id_personaje`='".$_POST['id_personaje']."'";
+if(isset($_POST['id_cereala'])){
+    if(!empty($_POST['nume_cereala'])) {
+    $sqlPersonaje="UPDATE tip_cereala SET nume_cereala = '".$_POST['nume_cereala']."' WHERE`id_cereala`='".$_POST['id_cereala']."'";
         $resultPersonaje=mysqli_query($connection, $sqlPersonaje);
     if($resultPersonaje){
         echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
     }}}
 
-		if(isset($_POST['id_calitati'])){
-			if(!empty($_POST['nume_calitate'])) {
-				$sqlCalitati="UPDATE calitati SET nume_calitate = '".$_POST['nume_calitate']."' WHERE`id_calitati`='".$_POST['id_calitati']."'";
-				$resultCalitati=mysqli_query($connection, $sqlCalitati);
-			if($resultCalitati){
+		if(isset($_POST['id_furnizor'])){
+			if(!empty($_POST['nume_furnizor'])) {
+			$sqlFurnizor="UPDATE furnizor SET nume_furnizor = '".$_POST['nume_furnizor']."' WHERE`id_furnizor`='".$_POST['id_furnizor']."'";
+					$resultFurnizor=mysqli_query($connection, $sqlFurnizor);
+			if($resultFurnizor){
 					echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
 			}}}
 
-			if(isset($_POST['id_consecinta'])){
-				if(!empty($_POST['nume_consecinta'])) {
-					$sqlConsecinta="UPDATE consecinte SET nume_consecinta = '".$_POST['nume_consecinta']."' WHERE`id_consecinta`='".$_POST['id_consecinta']."'";
-					$resultConsecinta=mysqli_query($connection, $sqlConsecinta);
-						if($resultConsecinta){
-								echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
-						}}}
-						
-						if(isset($_POST['id_eveniment'])){
-							if(!empty($_POST['nume_eveniment'])) {
-								$sqlConsecinta="UPDATE evenimente SET nume_eveniment = '".$_POST['nume_eveniment']."' WHERE`id_eveniment`='".$_POST['id_eveniment']."'";
-								$resultEveniment=mysqli_query($connection, $sqlConsecinta);
-									if($resultEveniment){
-											echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
-									}}}
+			if(isset($_POST['id_pret'])){
+				if(!empty($_POST['pret'])) {
+				$sqlPret="UPDATE pret SET pret = '".$_POST['pret']."' WHERE`id_pret`='".$_POST['id_pret']."'";
+						$resultPret=mysqli_query($connection, $sqlPret);
+				if($resultPret){
+						echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
+				}}}
 
-									if(isset($_POST['id_locatie'])){
-										if(!empty($_POST['nume_locatie'])) {
-											$sqlConsecinta="UPDATE locatia SET nume_locatie = '".$_POST['nume_locatie']."' WHERE`id_locatie`='".$_POST['id_locatie']."'";
-											$resultEveniment=mysqli_query($connection, $sqlConsecinta);
-												if($resultEveniment){
-														echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
-												}}}
+				if(isset($_POST['id_pret'])){
+					if(!empty($_POST['cantitate'])) {
+					$sqlPret="UPDATE cantitate SET cantitatea = '".$_POST['cantitate']."' WHERE`id_cantitate`='".$_POST['id_pret']."'";
+							$resultPret=mysqli_query($connection, $sqlPret);
+					if($resultPret){
+							echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
+					}}}
 
+
+$id_cereala_nou = $_POST['id_cereala_nou'];
+$nume_cereala_nou = $_POST['nume_cereala_nou'];
+$stergecereala = $_POST['get_id'];
+
+if (isset($_POST['submit'])) {
+	$sql = ("INSERT INTO `tip_cereala`(`id_cereala`, `nume_cereala`) VALUES(?,?)");
+	$query = $connection->prepare($sql);
+	$query->execute([$id_cereala_nou,$nume_cereala_nou]);
+}
+
+if(isset($_POST['submit'])){
+	echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
+}
+
+if (isset($_POST['delete_submit'])) {
+	$sql = "DELETE FROM tip_cereala WHERE id_cereala=?";
+	$query = $connection->prepare($sql);
+	$query->execute([$stergecereala]);
+}
+
+if(isset($_POST['delete_submit'])){
+	echo "<script type='text/javascript'>window.location.replace('modify.php')</script>";
+}
+?>

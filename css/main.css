@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-image: url("/images/hair-1s-1084px.svg");
+	height: 98vh;
+}
+
+.info{
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 20%;
+	height: 96vh;
+	border-radius: 10px;
+	padding: 2rem;
+	margin: 1rem;
+	border-radius: 10px;
+	box-shadow: 5px 5px 2px 2px rgba(0,0,0,0.5);
+	position: relative;
+	float: left;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 1rem;
+	letter-spacing: 1px;
+	font-weight: 800;
+	flex-direction: column;
+}
+
+.logo a{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-family: 'Acme', sans-serif;
+}
+
+.items-na{
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	flex-direction: column;
+}
+
+.cereale h1{
+	text-transform: uppercase;
+	margin-top: 0.5rem;
+	font-size: 1.5rem;
+	background-color: #12232E;
+	padding: 1rem;
+	border-radius: 10px;
+	color: #EEFBFB;
+	font-weight: bold;
+	font-family: 'Acme', sans-serif;
+}
+
+.cereale_icon , .cereale_icon2 , .cereale_icon3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+
+
+.cereale_grau, .cereale_porumb ,.cereale_hrisca , .cereale_orz , .cereale_oat , .cereale_rye{
+	background-color: #8acff4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+	text-transform: uppercase;
+	color:  #222831;
+	font-weight: 1000;
+	font-size: 1rem;
+	height: 5rem;
+	width: 4.5rem;
+	padding: 2rem 0;
+	border-style: solid;
+}
+
+.cereale_grau p,.cereale_hrisca p,.cereale_oat p,.cereale_porumb p ,.cereale_rye p,.cereale_orz p{
+	font-family: 'Acme', sans-serif;
+}
+
+.cereale_icon img{
+	margin-top: 20px;
+	width: 2rem;
+	height: 2rem;
+}
+
+.cereale_grau:hover,.cereale_hrisca:hover,.cereale_oat:hover,.cereale_porumb:hover,.cereale_rye:hover,.cereale_orz:hover{
+	width: 5rem;
+	height: 6rem;
+	transition: all 0.5s;
+	background-color: #dcedf7;
+}
+
+.cereale_icon2 img{
+	margin-top: 20px;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.cereale_icon3 img{
+	margin-top: 20px;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.cereale{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.navbar-itemss{
+	display: flex !important; 
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+#myChart{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chart1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 5px 5px 2px 2px rgba(0,0,0,0.5);
+	width: 500px;
+	height: 400px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.chart2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 5px 5px 2px 2px rgba(0,0,0,0.5);
+	width: 500px;
+	height: 400px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+
+.chart3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 5px 5px 2px 2px rgba(0,0,0,0.5);
+	width: 1050px;
+	height: 340px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.charts-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 3rem;
+	position: relative;
+	top: 1rem;
+}
+
+.charts-container2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-top: 3rem;
+}
+
+.menu h1{
+	margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 800px) {
+ body{
+	display: none;
+ }
+}
+
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:#e3f3dc;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	z-index: 1000;
+	flex-direction: column;
+	font-size: 1.5rem;
+}
+
+.loader p{
+	font-family: 'Acme', sans-serif;
+}
+
+.disppear{
+  animation: vanish 2s forwards;
+}
+
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}

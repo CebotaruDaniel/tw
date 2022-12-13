@@ -2,75 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01bfca58-4c4e-4404-90c7-a540a4de4c8f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/animation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/200w.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/back312.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/background1231.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/background231.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/backgroundjungle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/bani.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/cloud.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/eth.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/fakurian-design-5KJKcu6vkE0-unsplash-scaled.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/footer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/history-of-nfts.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/imagine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/imagine1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/imagineriscuri.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/nft1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/nft1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/nft2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/nft3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/photo1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/risc3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/imagini/unnamed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style_faqs.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylecuriozitati.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylegeneral.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylemarket.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styleprice.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/curiozitati.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/faqs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/market.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/price.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/3050.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/Sol.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/art-studies.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/binance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/bnbsvg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/btc-svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/casual-t-shirt-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/coinbase-svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/coinbase.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/cryptocom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/doge-svg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/doge-svg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/doge-svgg.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/eth-svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/ethsvg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/games.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/gate-io-svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/income.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/ku-coinsvg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/ltc-svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/magiceden.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/nift.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/nifty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/opensea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagini-logo/sol-svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/appjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/transition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tw/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/tw/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/modify.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/modify.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +13,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/tw" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -108,6 +40,7 @@
       <updated>1650196660810</updated>
       <workItem from="1650196663149" duration="241000" />
       <workItem from="1650378232430" duration="18000" />
+      <workItem from="1667397373572" duration="293000" />
     </task>
     <servers />
   </component>

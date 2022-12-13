@@ -1,0 +1,83 @@
+
+*{
+	text-align: center;
+}
+
+.modifPersonaje td, .modifPersonaje th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+.modifPersonaje tr:hover {background-color: #ddd;}
+
+.modifPersonaje th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #8acff4;
+	color: white;
+}
+
+
+table, th, td {
+border: 0.1rem solid #8acff4 !important;
+border-collapse: collapse;
+text-align: center;
+font-family: 'Montserrat',sans-serif;
+font-size: 1.6rem;
+}
+
+th{
+font-size: 1.2rem;
+font-weight: 600 !important;
+padding: 1.4rem;
+}
+
+td input{
+padding: 0.1rem;
+text-align: center;
+}
+
+.container{
+	position: relative;
+	top: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.butoane{
+	display: flex;
+	gap: 2rem;
+	text-align: center;
+}
+.butoane a{
+	text-decoration: none; 
+	display: flex;
+	font-size: 1rem;
+	color: #8acff4;
+	background-color: #fff;
+	padding: 12px 30px;
+	border-radius: 5px;
+	font-weight: 500;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+	border: #8acff4 solid;
+	transition: all .3s;
+}
+.butoane a:hover{
+	font-size: 1.2rem;
+	color: #8acff4;
+}
+
+
+.foooter{
+	width: 100%;
+}
+
+.nounderline{
+	text-decoration: none;
+	font-family: serif;
+	text-transform: uppercase;
+}
